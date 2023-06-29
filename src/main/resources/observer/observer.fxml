@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Observer.Main"
+            prefHeight="560.0" prefWidth="800.0">
+    <Group>
+        <ImageView>
+            <Image url="@base.jpg"/>
+        </ImageView>
+
+        <ImageView fx:id="nose"
+                   fitWidth="163"
+                   fitHeight="59"
+                   x="233"
+                   y="286"
+                   onMouseClicked="#onNoseClicked">
+            <Image url="@nose_default.png"/>
+        </ImageView>
+
+        <ImageView fx:id="leftEye"
+                   fitWidth="69"
+                   fitHeight="69"
+                   x="200"
+                   y="240"
+                   onMouseClicked="#onLeftEyeClicked">
+            <Image url="@eye_left_default.png"/>
+        </ImageView>
+
+        <ImageView fx:id="rightEye"
+                   fitWidth="70"
+                   fitHeight="67"
+                   x="370"
+                   y="240"
+                   onMouseClicked="#onRightEyeClicked">
+            <Image url="@eye_right_default.png"/>
+        </ImageView>
+
+
+        <ImageView fx:id="mouth"
+                   fitWidth="109"
+                   fitHeight="50"
+                   x="268"
+                   y="340"
+                   onMouseClicked="#onMouthClicked">
+            <Image url="@rot_default.png"/>
+        </ImageView>
+    </Group>
+</AnchorPane>
